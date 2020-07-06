@@ -12,7 +12,7 @@
 param (
     $STORAGE_ACCOUNT_KEY,
     $STORAGE_ACCOUNT_NAME,
-    $SUBSCRIPTIONf
+    $SUBSCRIPTION
 )
 
 Install-Module -Name Az.FrontDoor -force
