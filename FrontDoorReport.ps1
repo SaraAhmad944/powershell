@@ -24,7 +24,7 @@ $AzureResource = @()
 $RCount=0;
 foreach($count in $TotalCount)
 {
-$ResourceGroupNamev1 = $GetResourcesFD.Id
+[string]$ResourceGroupNamev1 = $GetResourcesFD.Id
 $ResourceGroupNamev2 = $ResourceGroupNamev1[$RCount].Split("/")
 $contextFD = Get-AzFrontDoorFrontendEndpoint -ResourceGroupName $ResourceGroupNamev2[4] -FrontDoorName $count
 $contextFDHostNames = $contextFD.HostName
